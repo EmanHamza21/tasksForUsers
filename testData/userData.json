@@ -1,0 +1,16 @@
+{
+    "loggedUsers":[
+        {
+            "userName": "emanHamza",
+            "password": "123456"
+        },
+        {
+            "userName": "yahya",
+            "password": "1234" 
+        },
+        {
+            "userName": "aMaher",
+            "password": "123456"
+        }
+    ]
+}
