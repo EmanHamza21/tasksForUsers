@@ -1,5 +1,5 @@
 
-class Users{
+class ClassUsers{
 
     constractor (userName: string, password: any){
         this.userName= userName;
@@ -9,7 +9,7 @@ class Users{
     password: any;
 }
 
-export default Users;
+export default ClassUsers;
 
 
 
