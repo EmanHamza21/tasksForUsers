@@ -1,5 +1,6 @@
 "use strict";
 exports.__esModule = true;
+exports.logPerson = exports.isUser = exports.isAdmin = exports.persons = void 0;
 exports.persons = [
     { type: 'user', name: 'Max Mustermann', age: 25, occupation: 'Chimney sweep' },
     { type: 'admin', name: 'Jane Doe', age: 32, role: 'Administrator' },
@@ -22,7 +23,7 @@ function logPerson(person) {
     if ('occupation' in person) {
         additionalInformation = person.occupation;
     }
-    console.log(" - " + person.name + ", " + person.age + ", " + additionalInformation);
+    console.log(" - ".concat(person.name, ", ").concat(person.age, ", ").concat(additionalInformation));
 }
 exports.logPerson = logPerson;
 console.log('Admins:');

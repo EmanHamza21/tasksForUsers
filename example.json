@@ -1,0 +1,19 @@
+{
+
+  "primaryBright":    "eman",
+  "primaryMain":      "#05B4F0",
+  "primaryDarker":    "#04A1D7",
+  "primaryDarkest":   "#048FBE",
+
+  "secondaryBright":  "#4CD2C0",
+  "secondaryMain":    "#00BFA5",
+  "secondaryDarker":  "#009884",
+  "secondaryDarkest": "#007F6E",
+
+  "tertiaryMain":     "#FA555A",
+  "tertiaryDarker":   "#F93C42",
+  "tertiaryDarkest":  "#F9232A",
+
+  "darkGrey":         "#333333",
+  "lightGrey":        "#777777"
+}
