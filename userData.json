@@ -1,9 +1,5 @@
-[
-  [
-    [
-      [
-        {
-          "loggedUsers": [
+{
+"loggedUsers": [
             {
               "userName": "emanHamza",
               "password": "123456",
@@ -20,28 +16,4 @@
               "tasks": "'You`ve no tasks assigned to you'"
             }
           ]
-        },
-        {
-          "userName": "hamza",
-          "password": "123456",
-          "tasks": "Not assigened yet"
-        }
-      ],
-      {
-        "userName": "aya",
-        "password": "898989",
-        "tasks": "Not assigened yet"
-      }
-    ],
-    {
-      "userName": "asmaaa",
-      "password": "1234",
-      "tasks": "Not assigened yet"
-    }
-  ],
-  {
-    "userName": "malik",
-    "password": "123455",
-    "tasks": "Not assigened yet"
-  }
-]
+}
