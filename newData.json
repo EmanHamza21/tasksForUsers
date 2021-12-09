@@ -1,0 +1,35 @@
+[
+  [
+    [
+      [
+        [
+          {
+            "state": "New user",
+            "userName": "999",
+            "password": "9999"
+          },
+          {
+            "userName": "ooio",
+            "password": "90-9"
+          }
+        ],
+        {
+          "userName": "ahhhhhhhhhhhh",
+          "password": "9899999999"
+        }
+      ],
+      {
+        "userName": "uuuuuuuu",
+        "password": "88888888888"
+      }
+    ],
+    {
+      "userName": "jjjjjjjjj",
+      "password": "222222222222"
+    }
+  ],
+  {
+    "userName": "mema",
+    "password": "987654"
+  }
+]
