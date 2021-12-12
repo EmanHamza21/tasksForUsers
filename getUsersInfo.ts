@@ -2,7 +2,7 @@
 import * as readline from 'readline';
 import {readFile, writeFile} from 'fs/promises'
 import ClassUsers from "./users";
-import { type } from 'os';
+import { exit } from 'process';
 var json = require('./userData.json');
 
 const fs = require('fs');
@@ -14,7 +14,6 @@ let rl = readline.createInterface({
 })
 
   rl.question('Are you a registered user or non registered user? (`yes` or `no`)?' ,(answer) =>{
-
     if(answer == 'yes' || answer == 'YES'){
       rl.question('Please enter your userName and password seperated by a comma?' ,(answer1) =>{
         var splitFloat: any= answer1.split(",");
@@ -48,11 +47,11 @@ let rl = readline.createInterface({
           }
           if(isCredentialFalse == true){
             console.log('Wrong userName or password!'+'\n'+'please try again!');
+            exit();
           }       
       });
     }
     else if(answer == 'no' || answer == 'NO'){
-
         rl.question('Want to register? (`yes` or `no`)' ,(answer2) =>{
           
           if(answer2 == 'yes' || answer2 == 'YES'){
@@ -94,17 +93,21 @@ let rl = readline.createInterface({
               }
               run();
               console.log('User data saved successfully!'+'\n' +'Please try to login again');
+              exit();
           }) 
         }else if(answer2 == 'no' || answer2 == 'NO'){
          console.log('Sorry to hear that!!'+ '\n'+' Bye bye!');
+         exit()
         } 
         else{
           console.log('Please provide your answer with `yes` OR `no`.'+ '\n'+ 'Try again!!');
+          exit();
         }  
     })
   }
     else{
       console.log('Please provide your answer with `yes` OR `no`.'+ '\n'+ 'Try again!!');
+      exit();
     };
 });
   

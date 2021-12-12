@@ -39,6 +39,7 @@ exports.__esModule = true;
 var readline = require("readline");
 var promises_1 = require("fs/promises");
 var users_1 = require("./users");
+var process_1 = require("process");
 var json = require('./userData.json');
 var fs = require('fs');
 var data = JSON.parse(fs.readFileSync('./newData.json'));
@@ -76,6 +77,7 @@ rl.question('Are you a registered user or non registered user? (`yes` or `no`)?'
             }
             if (isCredentialFalse == true) {
                 console.log('Wrong userName or password!' + '\n' + 'please try again!');
+                process_1.exit();
             }
         });
     }
@@ -135,18 +137,22 @@ rl.question('Are you a registered user or non registered user? (`yes` or `no`)?'
                     }); };
                     run();
                     console.log('User data saved successfully!' + '\n' + 'Please try to login again');
+                    process_1.exit();
                 });
             }
             else if (answer2 == 'no' || answer2 == 'NO') {
                 console.log('Sorry to hear that!!' + '\n' + ' Bye bye!');
+                process_1.exit();
             }
             else {
                 console.log('Please provide your answer with `yes` OR `no`.' + '\n' + 'Try again!!');
+                process_1.exit();
             }
         });
     }
     else {
         console.log('Please provide your answer with `yes` OR `no`.' + '\n' + 'Try again!!');
+        process_1.exit();
     }
     ;
 });
