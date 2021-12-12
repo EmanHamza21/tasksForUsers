@@ -39,6 +39,7 @@ let rl = readline.createInterface({
           if(userNameFormJson== userInfoFromTerm.userName && passwordFormJson == userInfoFromTerm.password){
               console.log('Welcome ' + userInfoFromTerm.userName + ' !'+'\n'+ 'If you`ve any tasks it should appear here :D');
               console.log(json.loggedUsers[i].tasks);
+              isCredentialFalse = false;
               break; 
           } 
           else{
