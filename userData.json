@@ -1,19 +1,8 @@
-{
-"loggedUsers": [
-            {
-              "userName": "emanHamza",
-              "password": "123456",
-              "tasks": "task1, task2"
-            },
-            {
-              "userName": "yahya",
-              "password": "1234",
-              "tasks": "task1, task2, task3"
-            },
-            {
-              "userName": "aMaher",
-              "password": "123456",
-              "tasks": "'You`ve no tasks assigned to you'"
-            }
-          ]
-}
+[
+  null,
+  {
+    "userName": "ah",
+    "password": "15555",
+    "tasks": "Not assigened yet"
+  }
+]

@@ -63,10 +63,10 @@ rl.question('Are you a registered user or non registered user? (`yes` or `no`)?'
             for (var i = 0; i < json.loggedUsers.length; i++) {
                 userNameFormJson = json.loggedUsers[i].userName;
                 passwordFormJson = json.loggedUsers[i].password;
+                //console.log(userNameFormJson);
                 if (userNameFormJson == userInfoFromTerm.userName && passwordFormJson == userInfoFromTerm.password) {
                     console.log('Welcome ' + userInfoFromTerm.userName + ' !' + '\n' + 'If you`ve any tasks it should appear here :D');
                     console.log(json.loggedUsers[i].tasks);
-                    isCredentialFalse = false;
                     break;
                 }
                 else {
@@ -102,7 +102,7 @@ rl.question('Are you a registered user or non registered user? (`yes` or `no`)?'
                                     })];
                                 case 1:
                                     buffer = _a.sent();
-                                    return [2 /*return*/, JSON.parse(buffer)];
+                                    return [2 /*return*/, JSON.parse(buffer)['LoggedUsers']];
                             }
                         });
                     }); };

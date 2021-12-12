@@ -1,3 +1,4 @@
+
 import * as readline from 'readline';
 import {readFile, writeFile} from 'fs/promises'
 import ClassUsers from "./users";
@@ -31,11 +32,12 @@ let rl = readline.createInterface({
         for(let i=0; i<json.loggedUsers.length; i++){
              userNameFormJson = json.loggedUsers[i].userName;
              passwordFormJson = json.loggedUsers[i].password;
+              //console.log(userNameFormJson);
+
 
           if(userNameFormJson== userInfoFromTerm.userName && passwordFormJson == userInfoFromTerm.password){
               console.log('Welcome ' + userInfoFromTerm.userName + ' !'+'\n'+ 'If you`ve any tasks it should appear here :D');
               console.log(json.loggedUsers[i].tasks);
-              isCredentialFalse= false;
               break; 
           } 
           else{
@@ -72,11 +74,11 @@ let rl = readline.createInterface({
                 tasks: string;
               }
 
-              const getAllFormJson = async():Promise <PushDataIntoJson[]> => {
+              const getAllFormJson = async():Promise <PushDataIntoJson> => {
                   const buffer = await readFile('./userData.json',{
                   encoding:'utf-8'
                 })
-                return JSON.parse(buffer);
+                return JSON.parse(buffer)['LoggedUsers'];
               }
 
               const addUser = async (addUser: PushDataIntoJson) => {
