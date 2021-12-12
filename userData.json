@@ -1,8 +1,19 @@
-[
-  null,
-  {
-    "userName": "ah",
-    "password": "15555",
-    "tasks": "Not assigened yet"
-  }
-]
+{
+  "loggedUsers": [
+    {
+      "userName": "ah",
+      "password": "15555",
+      "tasks": "Not assigened yet"
+    },
+    {
+      "userName": "xx",
+      "password": "yy",
+      "tasks": "Not assigened yet"
+    },
+    {
+      "userName": "yahya",
+      "password": "wow",
+      "tasks": "Not assigened yet"
+    }
+  ]
+}

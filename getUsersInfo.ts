@@ -2,6 +2,7 @@
 import * as readline from 'readline';
 import {readFile, writeFile} from 'fs/promises'
 import ClassUsers from "./users";
+import { type } from 'os';
 var json = require('./userData.json');
 
 const fs = require('fs');
@@ -78,12 +79,13 @@ let rl = readline.createInterface({
                   const buffer = await readFile('./userData.json',{
                   encoding:'utf-8'
                 })
-                return JSON.parse(buffer)['LoggedUsers'];
+                return JSON.parse(buffer);
               }
 
               const addUser = async (addUser: PushDataIntoJson) => {
                 const newData= await getAllFormJson();
-                await writeFile ('./userData.json',JSON.stringify([newData,addUser],null,2))
+                newData['loggedUsers'].push(addUser);
+                await writeFile ('./userData.json',JSON.stringify(newData,null,2))
               };
 
               const run = async() =>{
